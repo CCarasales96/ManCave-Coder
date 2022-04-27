@@ -1,0 +1,14 @@
+.title-text p {
+  margin: auto;
+  font-size: 20px;
+  color: #009688;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+section h2 {
+  color: #009688;
+}
+/*# sourceMappingURL=style2.css.map */
