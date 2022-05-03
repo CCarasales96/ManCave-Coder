@@ -13,14 +13,14 @@ section h2 {
     color: $mostcolorused;
 }
 
-$width: 280px;
-$font-size: 200px;
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+$width: 280px;
+$font-size: 200px;
 #banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(./images/ejemplo\ 2.jpg);
     background-size: cover;
@@ -29,7 +29,7 @@ $font-size: 200px;
 }
 
 .logo {
-    width: $width/2;
+    width: $width/10;
     position: absolute;
     top: 4%;
     left: 10%;
@@ -42,7 +42,7 @@ $font-size: 200px;
 }
 
 .banner-text h1 {
-    font-size: ($font-size/2)-30;
+    font-size: ($font-size*10)-30;
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -449,7 +449,7 @@ hr {
 }
 
 .social-links {
-    text-align: center;
+    @include texto( right)
 }
 
 .social-links .fa {
@@ -486,7 +486,15 @@ hr {
     }
 }
 
+@mixin flex( $text, $aling) {
+    text-align: $text;
+    align-items: $aling;
+}
+
 section h2 {
-    text-align: center;
-    align-items: center;
+    @include flex( center, center)
+}
+
+@mixin texto( $texto) {
+    text-align: $texto;
 }
