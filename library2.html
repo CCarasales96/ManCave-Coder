@@ -3,12 +3,14 @@
 <head>
     <title>Man Cave Shop</title>
     <meta name="description" content="Mire nuestro trabajo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="NUESTRO TRABAJO, CAVES, DESIGN">
     <link rel="stylesheet" href="style2.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
@@ -39,34 +41,37 @@
     </div>
 
     <!--Library   -->
-
-    <section id="library">
-        <div class="title-text-library">
-            <p>OUR WORK</p>
-            <h1>GAMING-CINEMA-CLASSY-SPORTY CAVES</h1>
+    <main>
         </div>
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/classy2.jpg" class="d-block w-100" alt="classy">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/GAME CAVE SET UP.jpg" class="d-block w-100" alt="gaming">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/SPORT MAN CAVE 3.jpg" class="d-block w-100" alt="sport">
+        <div class="grande__centro">
+            <div class="centro__obra">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/classy3.png" alt="Classy"></a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gaming3.png" alt="Gaming"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/sport2.png" alt="Sport"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
+    </main>
     </section>
 
     <!--footer-->
@@ -122,6 +127,11 @@
             speedAsDuration: true
         });
     </script>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    </footer>
 
 </body>
 
